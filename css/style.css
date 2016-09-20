@@ -14,19 +14,18 @@ body{
 
 /*title styling*/
 #title{
-  width: 50%;
-  height: 100%;
-  margin-top: 1%;
-  margin-right: auto;
-  margin-bottom: 1%;
-  margin-left: auto;
-  text-align: center;
+  width:100%;
+  position:absolute;
+  top:1%;
+  right:0;
+  z-index:10;
 }
 
 #title img{
-  height: 30%;
-  width: 30%;
-  margin: auto;
+  margin:0;
+  width:10%;
+  position:relative;
+  right:0;
 }
 
 /*top blurb styling*/
