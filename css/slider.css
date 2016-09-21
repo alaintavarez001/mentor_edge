@@ -24,3 +24,8 @@ div#slider figure {
   font-size: 0;
   animation: 12s slidy infinite;
 }
+
+/*resize slider image*/
+#slider {
+  height: 41em;
+}

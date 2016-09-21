@@ -5,7 +5,7 @@ header{
 
 /*body styling*/
 body{
-  background: linear-gradient(AliceBlue, #0e1e3d);
+  background-color: white;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -31,17 +31,18 @@ body{
 /*top blurb styling*/
 .topBlurb{
   width: 80%;
-  margin: auto;
+  margin: 3em auto;
   font-family: abel;
   font-size: 24px;
   font-weight: bold;
   letter-spacing: 1px;
-  color: WhiteSmoke;
+  color: #0e1e3d;
   text-shadow: 0 0 3px DimGrey;
   text-align: center;
-  border-top: 2px solid #0e1e3d;
-  border-bottom: 2px solid #0e1e3d;
+  /*border-top: 2px solid #0e1e3d;
+  border-bottom: 2px solid #0e1e3d;*/
 }
+
 
 /*table sizing*/
 .pictureTable{
@@ -50,7 +51,7 @@ body{
 }
 
 /*image row arangement and sizing*/
-#topRow{
+/*#topRow{
   width: 100%;
   height: 49%;
   margin-top: .5%;
@@ -66,70 +67,96 @@ body{
   margin-right: auto;
   margin-bottom: .0%;
   margin-left: auto;
-}
+}*/
 
 /*individual image styling*/
 #pic1{
-  background-image: url("../img/presentation.jpeg");
+  /*background-image: url("../img/presentation.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center;*/
   float: left;
+  margin-left: 15em;
 }
 #pic1:hover {
-  background: linear-gradient(#0e1e3d, transparent),
-              url("../img/presentation.jpeg");
-              background-size: cover;
-              background-repeat: no-repeat;
-              background-position: center;
+
+}
+#blurb1{
+  float: right;
+  margin-right: 15em;
 }
 
 #pic2{
-  background-image: url("../img/interview.jpeg");
+  /*background-image: url("../img/interview.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  float: left;
+  background-position: center;*/
+  float: right;
+  margin-right: 15em;
 }
 #pic2:hover {
-  background: linear-gradient(#0e1e3d, transparent),
+  /*background: linear-gradient(#0e1e3d, transparent),
               url("../img/interview.jpeg");
               background-size: cover;
               background-repeat: no-repeat;
-              background-position: center;
+              background-position: center;*/
+}
+#blurb2{
+  float: left;
+  margin-left: 15em;
 }
 
 #pic3{
-  background-image: url("../img/lab_guy.jpeg");
+  /*background-image: url("../img/lab_guy.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center;*/
   float: left;
+  margin-left: 15em;
 }
 #pic3:hover {
-  background: linear-gradient(#0e1e3d, transparent),
+  /*background: linear-gradient(#0e1e3d, transparent),
               url("../img/lab_guy.jpeg");
               background-size: cover;
               background-repeat: no-repeat;
-              background-position: center;
+              background-position: center;*/
+}
+#blurb3{
+  float: right;
+  margin-right: 15em;
 }
 
 #pic4{
-  background-image: url("../img/showing_paperwork.jpeg");
+  /*background-image: url("../img/showing_paperwork.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center;*/
   float: right;
+  margin-right: 15em;
 }
 #pic4:hover {
-  background: linear-gradient(#0e1e3d, transparent),
+  /*background: linear-gradient(#0e1e3d, transparent),
               url("../img/showing_paperwork.jpeg");
               background-size: cover;
               background-repeat: no-repeat;
-              background-position: center;
+              background-position: center;*/
+}
+#blurb4{
+  float: left;
+  margin-left: 15em;
 }
 
-#pic5{
+.images{
+  height: 20em;
+  width: 25em;
+}
+
+.blurbs{
+  height: 20em;
+  width: 20em;
+}
+
+/*#pic5{
   background-image: url("../img/medical_board.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -157,10 +184,10 @@ body{
               background-size: cover;
               background-repeat: no-repeat;
               background-position: center;
-}
+}*/
 
 /* image card styling*/
-.cards{
+/*.cards{
   height: 97%;
   width: 30.33%;
   margin-top: .5%;
@@ -170,10 +197,10 @@ body{
   padding: 1%;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 DarkSlateGrey, 0 6px 20px 0 DarkSlateGrey;
-}
+}*/
 
 /*quote styling*/
-.cards p{
+/*.cards p{
   opacity: 0;
   font-family: abel;
   font-size: 22px;
@@ -183,9 +210,9 @@ body{
   position: relative;
   z-index: 1;
   transition: all, 1.5s;
-}
+}*/
 
-.cards h3{
+/*.cards h3{
     opacity: 1;
     font-family: abel;
     font-size: 26px;
@@ -200,7 +227,7 @@ body{
     z-index: 2;
     transition: all, 1.3s;
     background: linear-gradient(to right, transparent, #0e1e3d , transparent);
-}
+}*/
 
 /*hyperlink styling*/
 a:hover h3{
