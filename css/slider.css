@@ -25,7 +25,11 @@ div#slider figure {
   animation: 12s slidy infinite;
 }
 
-/*resize slider image*/
+/*resize slider*/
 #slider {
   height: 41em;
+}
+
+#slider img{
+
 }

@@ -1,3 +1,5 @@
+@import url('w3.css');
+
 /*header stytling*/
 header{
   width: 100%;
@@ -39,195 +41,76 @@ body{
   color: #0e1e3d;
   text-shadow: 0 0 3px DimGrey;
   text-align: center;
-  /*border-top: 2px solid #0e1e3d;
-  border-bottom: 2px solid #0e1e3d;*/
 }
 
 
-/*table sizing*/
 .pictureTable{
   width: 80%;
   margin: auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-/*image row arangement and sizing*/
-/*#topRow{
-  width: 100%;
-  height: 49%;
-  margin-top: .5%;
-  margin-right: auto;
-  margin-bottom: .5%;
-  margin-left: auto;
+.row{
+  height: 20rem;
+  position: relative;
+  display:flex;
+  flex: 1;
+  justify-content: space-between;
 }
 
-#bottomRow{
-  width: 100%;
-  height: 49%;
-  margin-top: .5%;
-  margin-right: auto;
-  margin-bottom: .0%;
-  margin-left: auto;
-}*/
-
-/*individual image styling*/
-#pic1{
-  /*background-image: url("../img/presentation.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;*/
-  float: left;
-  margin-left: 15em;
-}
-#pic1:hover {
-
-}
-#blurb1{
-  float: right;
-  margin-right: 15em;
+.circle{
+  position: relative;
+  margin: auto;
+  height: 1rem;
+  width: 1rem;
+  border: solid #0e1e3d 5px;
+  border-radius: 50%;
 }
 
-#pic2{
-  /*background-image: url("../img/interview.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;*/
-  float: right;
-  margin-right: 15em;
-}
-#pic2:hover {
-  /*background: linear-gradient(#0e1e3d, transparent),
-              url("../img/interview.jpeg");
-              background-size: cover;
-              background-repeat: no-repeat;
-              background-position: center;*/
-}
-#blurb2{
-  float: left;
-  margin-left: 15em;
+.line{
+  padding: 0;
+  margin: 0;
+  width: 0;
+  border-left: solid #0e1e3d 2.5px;
+  border-right: solid #0e1e3d 2.5px;
+  height: 9.5rem;
+
 }
 
-#pic3{
-  /*background-image: url("../img/lab_guy.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;*/
-  float: left;
-  margin-left: 15em;
-}
-#pic3:hover {
-  /*background: linear-gradient(#0e1e3d, transparent),
-              url("../img/lab_guy.jpeg");
-              background-size: cover;
-              background-repeat: no-repeat;
-              background-position: center;*/
-}
-#blurb3{
-  float: right;
-  margin-right: 15em;
-}
-
-#pic4{
-  /*background-image: url("../img/showing_paperwork.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;*/
-  float: right;
-  margin-right: 15em;
-}
-#pic4:hover {
-  /*background: linear-gradient(#0e1e3d, transparent),
-              url("../img/showing_paperwork.jpeg");
-              background-size: cover;
-              background-repeat: no-repeat;
-              background-position: center;*/
-}
-#blurb4{
-  float: left;
-  margin-left: 15em;
+.row h1{
+  font-family: abel;
+  color: #0e1e3d;
+  text-shadow: 0 0 3px DimGrey;
+  font-weight: bold;
+  margin-top: 3rem;
 }
 
 .images{
-  height: 20em;
-  width: 25em;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
 }
 
 .blurbs{
-  height: 20em;
-  width: 20em;
+  margin: auto;
+  width: 30rem;
 }
 
-/*#pic5{
-  background-image: url("../img/medical_board.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  float: right;
-}
-#pic5:hover {
-  background: linear-gradient(#0e1e3d, transparent),
-              url("../img/medical_board.jpeg");
-              background-size: cover;
-              background-repeat: no-repeat;
-              background-position: center;
-}
-
-#pic6{
-  background-image: url("../img/showing_plan.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  float: right;
-}
-#pic6:hover {
-  background: linear-gradient(#0e1e3d, transparent),
-              url("../img/showing_plan.jpeg");
-              background-size: cover;
-              background-repeat: no-repeat;
-              background-position: center;
-}*/
-
-/* image card styling*/
-/*.cards{
-  height: 97%;
-  width: 30.33%;
-  margin-top: .5%;
-  margin-right: .5%;
-  margin-bottom: .5%;
-  margin-left: .5%;
-  padding: 1%;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px 0 DarkSlateGrey, 0 6px 20px 0 DarkSlateGrey;
-}*/
-
-/*quote styling*/
-/*.cards p{
-  opacity: 0;
+.blurbs p{
+  margin-top: 0;
   font-family: abel;
-  font-size: 22px;
-  color: WhiteSmoke;
+  color: #0e1e3d;
   text-shadow: 0 0 3px DimGrey;
-  text-align: center;
-  position: relative;
-  z-index: 1;
-  transition: all, 1.5s;
-}*/
+  font-size: 25px;
+}
 
-/*.cards h3{
-    opacity: 1;
-    font-family: abel;
-    font-size: 26px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    color: WhiteSmoke;
-    text-shadow: 0 0 3px DimGrey;
-    text-align: center;
-    width: 100%;
-    margin: auto;
-    position: relative;
-    z-index: 2;
-    transition: all, 1.3s;
-    background: linear-gradient(to right, transparent, #0e1e3d , transparent);
-}*/
+#pic1, #pic2, #pic3, #pic4{
+  margin: auto;
+  width: 30rem;
+  border-radius: 10px;
+}
+
 
 /*hyperlink styling*/
 a:hover h3{
