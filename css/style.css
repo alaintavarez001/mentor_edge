@@ -57,25 +57,19 @@ body{
   display:flex;
   flex: 1;
   justify-content: space-between;
+  z-index: 2
 }
 
 .circle{
+  justify-content: center;
   position: relative;
   margin: auto;
-  height: 1rem;
-  width: 1rem;
+  z-index: 20;
+  height: 1.5rem;
+  width: 1.5rem;
   border: solid #0e1e3d 5px;
   border-radius: 50%;
-}
-
-.line{
-  padding: 0;
-  margin: 0;
-  width: 0;
-  border-left: solid #0e1e3d 2.5px;
-  border-right: solid #0e1e3d 2.5px;
-  height: 9.5rem;
-
+  background-color: white;
 }
 
 .row h1{
@@ -93,8 +87,10 @@ body{
 }
 
 .blurbs{
-  margin: auto;
-  width: 30rem;
+  align-self: stretch;
+  width: 37.58rem;
+  height: 20rem;
+  z-index: 3;
 }
 
 .blurbs p{
@@ -111,6 +107,35 @@ body{
   border-radius: 10px;
 }
 
+
+#blurb1, #blurb3{
+    border-left: solid #0e1e3d 5.1px;
+    padding-left: 5rem;
+    margin-left:  0rem;
+}
+
+#blurb2, #blurb4{
+    border-right: solid #0e1e3d 5.1px;
+    padding-right: 5rem;
+    margin-right: 0rem;
+}
+
+#blurb1, #blurb3 h1{
+    text-align: left;
+}
+
+#blurb2, #blurb4 p{
+    text-align: left;
+}
+
+
+#blurb2, #blurb4 h1{
+    text-align: right;
+}
+
+#blurb2, #blurb4 p{
+  text-align: right;
+}
 
 /*hyperlink styling*/
 a:hover h3{
