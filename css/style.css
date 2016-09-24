@@ -49,10 +49,11 @@ body{
   margin: auto;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .row{
-  height: 20rem;
+  flex-basis: 100%;
   position: relative;
   display:flex;
   flex: 1;
@@ -62,17 +63,39 @@ body{
 
 .circle{
   justify-content: center;
-  position: relative;
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translateX(-50%);
   margin: auto;
   z-index: 20;
   height: 1.5rem;
   width: 1.5rem;
-  border: solid #0e1e3d 5px;
+  border:  5px solid #c9d142;
   border-radius: 50%;
   background-color: white;
 }
 
-.row h1{
+.line{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5.1px solid #c9d142;
+  height: 100%;
+  z-index: 19;
+}
+
+.row:nth-child(1) .line{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.row:nth-child(4) .line{
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.blurbs h1{
   font-family: abel;
   color: #0e1e3d;
   text-shadow: 0 0 3px DimGrey;
@@ -87,10 +110,13 @@ body{
 }
 
 .blurbs{
+  flex: initial;
   align-self: stretch;
-  width: 37.58rem;
+  flex-basis: 50%;
+  box-sizing: border-box;
   height: 20rem;
   z-index: 3;
+  padding: 4%;
 }
 
 .blurbs p{
@@ -102,22 +128,11 @@ body{
 }
 
 #pic1, #pic2, #pic3, #pic4{
+  flex: initial;
   margin: auto;
-  width: 30rem;
+  flex-basis: 45%;
+  box-sizing: border-box;
   border-radius: 10px;
-}
-
-
-#blurb1, #blurb3{
-    border-left: solid #0e1e3d 5.1px;
-    padding-left: 5rem;
-    margin-left:  0rem;
-}
-
-#blurb2, #blurb4{
-    border-right: solid #0e1e3d 5.1px;
-    padding-right: 5rem;
-    margin-right: 0rem;
 }
 
 #blurb1, #blurb3 h1{
@@ -137,14 +152,6 @@ body{
   text-align: right;
 }
 
-/*hyperlink styling*/
-a:hover h3{
-  opacity: 0;
-}
-
-a:hover p{
-  opacity: 1;
-}
 
 
 /*footer styling*/
@@ -167,6 +174,7 @@ footer{
   font-family: abel;
   font-size: 20px;
   font-weight: lighter;
+  color: DarkGray;
 }
 
 /*clear float*/
@@ -176,11 +184,14 @@ footer{
   clear:both;
 }
 
-/*mobile screen css*/
-@media only screen and (max-width: 800px) {
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
   body{
     margin:0;
   }
+
   /*logo styling*/
   #title{
     width: 100%;
@@ -197,104 +208,19 @@ footer{
     width:95%;
   }
 
-  /*align images vertically*/
-  #pic1, #pic2, #pic3, #pic4, #pic5, #pic6{
-    width: 95%;
-    margin-top: 1%;
-    margin-right: 2.5%;
-    margin-bottom: 1%;
-    margin-left: 2.5%;
+  /*pictureTable*/
+  .pictureTable{
+    width: 100%;
   }
 
-  /*individual image styling*/
-  #pic1{
-    background-image: url("../img/presentation.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    float: left;
-  }
-  #pic1:hover {
-    background: linear-gradient(#0e1e3d, transparent),
-                url("../img/presentation.jpeg");
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: center;
+  .blurbs h1{
+    font-size: 15px;
+    margin-top: 1rem;
   }
 
-  #pic2{
-    background-image: url("../img/interview.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    float: left;
-  }
-  #pic2:hover {
-    background: linear-gradient(#0e1e3d, transparent),
-                url("../img/interview.jpeg");
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: center;
-  }
-
-  #pic3{
-    background-image: url("../img/lab_guy.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    float: left;
-  }
-    #pic3:hover {
-    background: linear-gradient(#0e1e3d, transparent),
-                url("../img/lab_guy.jpeg");
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: center;
-  }
-
-  #pic4{
-    background-image: url("../img/showing_paperwork.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    float: left;
-  }
-  #pic4:hover {
-    background: linear-gradient(#0e1e3d, transparent),
-                url("../img/showing_paperwork.jpeg");
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: center;
-  }
-
-  #pic5{
-    background-image: url("../img/medical_board.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    float: left;
-  }
-  #pic5:hover {
-    background: linear-gradient(#0e1e3d, transparent),
-                url("../img/medical_board.jpeg");
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: center;
-  }
-
-  #pic6{
-    background-image: url("../img/showing_plan.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    float: left;
-  }
-  #pic6:hover {
-    background: linear-gradient(#0e1e3d, transparent),
-                url("../img/showing_plan.jpeg");
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: center;
+  .blurbs p{
+    font-size: 10px;
+    background-color: red;
   }
 
   /*copyright styling*/
@@ -302,31 +228,74 @@ footer{
   margin-top: 10%;
   }
 
-  /*mobile font styling*/
+  #copyright span{
+    font-size: 16px;
+    color: DarkGray;
+  }
 
   .topBlurb{
     font-size: 20px;
     letter-spacing: .5px;
   }
 
-  .cards p{
-    font-size: 18px;
+
+  #pic1, #pic2, #pic3, #pic4{
+    overflow: hidden;
   }
 
-  .cards h3{
-    font-size: 22px;
-    letter-spacing: 1px;
+}
+
+
+
+/* tablets (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+  /*logo styling*/
+
+  #title{
+    width: 100%;
+    height: auto;
+  }
+  #title img{
+    width: 50%;
+    display:block;
+    margin: 0 auto;
+  }
+
+  /*blurb styling*/
+  .blurb{
+    width:95%;
+  }
+
+  /*pictureTable*/
+  .pictureTable{
+    width: 95%;
+  }
+
+  .row h1{
+    margin-top: 2rem;
+  }
+
+  .blurbs p{
+    font-size: 20px;
+  }
+
+  /*copyright styling*/
+  #copyright{
+  margin-top: 10%;
   }
 
   #copyright span{
     font-size: 16px;
+    color: DarkGray;
   }
 
-  /*clear float*/
-  .pictureTable::after{
-    content:"";
-    display:block;
-    clear:both;
+  .topBlurb{
+    font-size: 20px;
+    letter-spacing: .5px;
   }
+
+
+
 
 }
