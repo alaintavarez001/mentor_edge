@@ -3,6 +3,7 @@
 /*header stytling*/
 header{
   width: 100%;
+
 }
 
 /*body styling*/
@@ -186,7 +187,11 @@ footer{
 
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (max-width : 480px) {
+
+  header{
+    height: 50vh;
+  }
 
   body{
     margin:0;
@@ -196,9 +201,13 @@ footer{
   #title{
     width: 100%;
     height: auto;
+    z-index: 10;
   }
   #title img{
-    width: 50%;
+    width: 25%;
+    position: absolute;
+    right: 73%;
+    margin-left: 1rem;
     display:block;
     margin: 0 auto;
   }
@@ -213,14 +222,21 @@ footer{
     width: 100%;
   }
 
+  #blurb1, #blurb2, #blurb3, #blurb4 h1{
+      text-align: left;
+  }
+
+  #blurb1, #blurb2, #blurb3, #blurb4  p{
+      text-align: left;
+  }
+
   .blurbs h1{
-    font-size: 15px;
-    margin-top: 1rem;
+    font-size: 25px;
+
   }
 
   .blurbs p{
-    font-size: 10px;
-    background-color: red;
+    font-size: 15px;
   }
 
   /*copyright styling*/
@@ -243,21 +259,72 @@ footer{
     overflow: hidden;
   }
 
+  .circle{
+    justify-content: center;
+    position: absolute;
+    left: 2%;
+    top: 45%;
+    transform: translateX(-50%);
+    margin: auto;
+    z-index: 20;
+    height: .8rem;
+    width: .8rem;
+    border:  2px solid #c9d142;
+    border-radius: 50%;
+    background-color: white;
+  }
+
+  .line{
+    position: absolute;
+    left: 2%;
+    transform: translateX(-50%);
+    border: 2px solid #c9d142;
+    height: 100%;
+    z-index: 19;
+  }
+
+  .row{
+    flex-wrap: wrap;
+    margin: 1rem 0;
+  }
+
+  #pic1, #pic2, #pic3, #pic4{
+    flex: initial;
+    margin: auto;
+    flex-basis: 90%;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+
+  .blurbs{
+    flex: initial;
+    align-self: stretch;
+    flex-basis: 90%;
+    box-sizing: border-box;
+    height: 8rem;
+    z-index: 3;
+    padding: 4%;
+  }
+
+
 }
 
 
 
 /* tablets (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+@media only screen and (min-width: 481px) and (max-width : 1024px) {
 
   /*logo styling*/
-
   #title{
     width: 100%;
     height: auto;
+    z-index: 10;
   }
   #title img{
-    width: 50%;
+    width: 20%;
+    position: absolute;
+    right: 79%;
+    margin-left: 1rem;
     display:block;
     margin: 0 auto;
   }
