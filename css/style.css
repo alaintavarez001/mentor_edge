@@ -212,11 +212,6 @@ footer{
     margin: 0 auto;
   }
 
-  /*blurb styling*/
-  .blurbs{
-    width:95%;
-  }
-
   /*pictureTable*/
   .pictureTable{
     width: 100%;
@@ -236,13 +231,13 @@ footer{
 
   #blurb2, #blurb4{
     position: absolute;
-    top: .2%;
+    top: 18.5%;
     left: 3%;
   }
 
   #blurb1, #blurb3{
     position: absolute;
-    bottom: 27%;
+    bottom: 25.5%;
     left: 3%;
   }
 
@@ -269,10 +264,11 @@ footer{
   }
 
   .topBlurb{
-    font-size: 20px;
+    font-size: 25px;
     letter-spacing: .5px;
+    text-shadow: none;
+    font-weight: 800;
   }
-
 
   #pic1, #pic2, #pic3, #pic4{
     overflow: hidden;
@@ -283,7 +279,7 @@ footer{
     justify-content: center;
     position: absolute;
     left: 2%;
-    top: 45%;
+    top: 55%;
     transform: translateX(-50%);
     margin: auto;
     z-index: 20;
@@ -324,6 +320,7 @@ footer{
     height: 8rem;
     z-index: 3;
     padding: 4%;
+    width:95%;
   }
 
 
