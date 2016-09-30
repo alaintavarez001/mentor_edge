@@ -114,6 +114,31 @@ Mentor Edge helps you start the career of your dreams by giving you the knowledg
 
 </div>
 
+<div class="callToAction">
+    <button type="button" class="w3-btn-floating-large" name="callToActionButton" id="callToAction" onclick="document.getElementById('callToActionForm').style.display='block'">Start Your Future Now!</button>
+</div>
+
+<div id="callToActionForm" class="w3-modal">
+  <div class="w3-modal-content w3-border w3-round-xlarge">
+    <div class="w3-container">
+      <span class="formTitle">Start Your Future Now!</span>
+      <form id="inputForm">
+        <span class="formText">First name:</span><br>
+          <input type="text" name="firstname" id="firstname"><br>
+        <span class="formText">Last name:</span><br>
+          <input type="text" name="lastname" id="lastname"><br>
+        <span class="formText">E-mail:</span><br>
+          <input type="email" name="email" id="email"><br>
+        <span class="formText">Phone number:</span><br>
+          <input type="tel" name="phonenumber" id="phonenumber">
+      </form>
+      <button type="button" name="submitBbutton" class="w3-btn" id="submitButton">Submit</button>
+      <button type="button" name="closeBbutton" class="w3-btn" id="closeButton" onclick="document.getElementById('callToActionForm').style.display='none'">Close</button>
+
+    </div>
+  </div>
+</div>
+
 
   <footer>
 
