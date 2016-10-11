@@ -26,9 +26,12 @@ body{
 
 #title img{
   margin:0;
-  width:10%;
+  width:20%;
   position:relative;
   right:0;
+  background: radial-gradient(rgba(255, 255, 255, 0.8) 10%, rgba(255,255,255,0.35) 80%);
+  border-radius: 5px;
+
 }
 
 /*top blurb styling*/
