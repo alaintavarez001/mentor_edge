@@ -28,6 +28,8 @@ a:hover{
 #bridge{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  text-align: center;
   background: linear-gradient(#3872bf, transparent),
               /*linear-gradient(transparent,white),*/
               url('../img/sunny_bridge.jpeg');
@@ -36,23 +38,26 @@ a:hover{
   background-size: cover;
   width: 100%;
   height: 100%;
-  padding: 14rem;
+  padding: 25rem;
 }
 
 #bridge h1{
+  position: absolute;
+  top: 34  %;
   text-align: center;
+  align-self: center;
   font-family: abel;
   font-weight: bolder;
   margin-bottom: 0;
   font-size: 60px;
 }
 
-#bridge img{
-  align-self: center;
-  justify-self: center;
-}
 #bridge h3{
+  position: absolute;
+  top: 65%;
+  right: 33%;
   text-align: center;
+  align-self: center;
   font-family: abel;
   font-weight: bolder;
   font-size: 40px;
@@ -340,6 +345,30 @@ footer{
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (max-width : 480px) {
+
+  #bridge{
+    padding: 15rem;
+  }
+
+  #bridge h1{
+    position: absolute;
+    right: 25%;
+    top: 27%;
+    font-size: 40px;
+    text-align: center;
+    margin: auto;
+  }
+
+  #bridge h3{
+    position: absolute;
+    right: 15%;
+    top: 45%;
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+  }
+
+
 
   header{
     height: 50vh;
