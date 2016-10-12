@@ -1,20 +1,75 @@
 @import url('w3.css');
+@import url('navIcon.css');
+@import url('sideMenu.css');
 
 /*header stytling*/
 header{
   width: 100%;
   overflow-y: hidden;
+  display: flex;
 }
 
 /*body styling*/
 body{
-  background-color: white;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
 }
 
+a{
+  text-decoration: none;
+}
+
+a:hover{
+    text-shadow: 0 0 3px DimGrey;
+}
+
+#bridge{
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(#3872bf, transparent),
+              /*linear-gradient(transparent,white),*/
+              url('../img/sunny_bridge.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding: 14rem;
+}
+
+#bridge h1{
+  text-align: center;
+  font-family: abel;
+  font-weight: bolder;
+  margin-bottom: 0;
+  font-size: 60px;
+}
+
+#bridge img{
+  align-self: center;
+  justify-self: center;
+}
+#bridge h3{
+  text-align: center;
+  font-family: abel;
+  font-weight: bolder;
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 10rem;
+}
+
+#owl{
+ height: 4.5rem;
+ width: 4.5rem;
+}
+
+.w3-navbar{
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
 /*title styling*/
 #title{
   width:100%;
@@ -42,8 +97,8 @@ body{
   font-size: 24px;
   font-weight: bold;
   letter-spacing: 1px;
-  color: #0e1e3d;
-  text-shadow: 0 0 3px DimGrey;
+  color: black;
+  /*text-shadow: 0 0 3px DimGrey;*/
   text-align: center;
 }
 
@@ -117,8 +172,8 @@ body{
 
 .blurbs h1{
   font-family: abel;
-  color: #0e1e3d;
-  text-shadow: 0 0 3px DimGrey;
+  color: black;
+  /*text-shadow: 0 0 3px DimGrey;*/
   font-weight: bold;
   margin-top: 3rem;
 }
@@ -126,8 +181,8 @@ body{
 .blurbs p{
   margin-top: 0;
   font-family: abel;
-  color: #0e1e3d;
-  text-shadow: 0 0 3px DimGrey;
+  color: black;
+  /*text-shadow: 0 0 3px DimGrey;*/
   font-size: 25px;
 }
 
@@ -161,7 +216,7 @@ body{
   flex-direction: column;
   margin: 5rem auto;
   height: 15rem;
-  background: linear-gradient(#3872bf, #88c2ff);
+  background-color: black;
 }
 
 .callToAction span{
@@ -183,8 +238,8 @@ body{
   background-color: white;
   border: 5px solid white;
   margin: 0 auto;
-  height: 5rem;
-  width: 20rem;
+  height: 7rem;
+  width: 15rem;
   font-family: abel;
   font-size: 25px;
   color: #0e1e3d;
@@ -206,7 +261,7 @@ body{
 }
 
 #callToActionForm{
-  color: #0e1e3d;
+  color: black;
   font-family: abel;
   font-size: 25px;
 }

@@ -1,0 +1,52 @@
+#sideMenu{
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  width: 300px;
+  position: fixed;
+  z-index: 11;
+  transition: 1s all ease;
+  right: 0;
+  height: 100%
+}
+
+#sideMenu ul{
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+  background-color: black;
+  height: 100%;
+}
+
+#sideMenu li{
+  display: flex;
+  padding: 2rem;
+  list-style-type: none;
+  border-bottom: 1px solid #888;
+  width: 80%;
+  align-content: flex-start;
+}
+
+#sideMenu a li{
+  color: #BBB;
+  font-size: 1.2em;
+  font-family: Abel;
+  transition: 1.5s all ease;
+}
+
+#sideMenu a li:hover{
+  background-color: rgb(32, 28, 23);
+  color: #3872bf;
+}
+
+#sideMenu a{
+  text-decoration: none;
+}
+
+.hideMenu{
+  right: -300px !important;
+}
+
+.hideMenu a{
+  color: hsla(0, 0%, 0%, 0);
+}

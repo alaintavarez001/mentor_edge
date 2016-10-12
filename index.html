@@ -5,37 +5,62 @@
 
   <link rel="icon"
       type="image/png"
-      href="img\mentorEdgeLogoLine.png">
+      href="img\owl-icon-blue.png"/>
 
   <meta name="viewport" content="width=device-width, inifial-scale=1, user-scalable=no">
 
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Abel" />
 
   <link rel="stylesheet" href="css/style.css">
-  <link rel='stylesheet' href='css/slider.css' />
+  <!-- <link rel='stylesheet' href='css/slider.css' /> -->
 
-  <title>Mentor Edge</title>
+  <title>MentorEdge</title>
 
 </head>
 
 <body>
 
   <header>
-
+      <nav class="navbar">
+        <a href="#"><img src="img\owl-icon-blue.png" alt="" id='owl' /></a>
+        <div id="nav-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
 <!-- mentor edge logo -->
-    <div id="title">
+    <!-- <div id="title">
       <img src="img\MentorEdgeLogoOwls.png" alt="" />
-    </div>
-    <div id='slider'>
+    </div> -->
+    <!-- <div id='slider'>
+
       <figure>
         <img src='img/slider/concert_lg.jpeg' alt />
         <img src='img/slider/mountain_summit_lg.jpeg' alt />
         <img src='img/slider/surfer_lg.jpeg' alt />
         <img src='img/slider/concert_lg.jpeg' alt />
       </figure>
-    </div>
-  </header>
+    </div> -->
 
+
+  <div id="bridge">
+   <h1>Mentor<i>Edge</i></h1><br>
+   <h3>Unleashing The Power Of People</h3>
+  </div>
+
+  <!-- sliding menu -->
+  <div id="sideMenu" class="hideMenu">
+  <ul>
+    <a href="#"><li>Home</li></a>
+    <a href="#"><li>Who We Are</li></a>
+    <a href="#"><li>Why Mentor<i>Edge</i></li></a>
+    <a href="#"><li>Success Stories</li></a>
+    <a href="#"><li>Blog</li></a>
+  </ul>
+</div>
+
+</header>
 
   <!-- top blurb -->
   <div class="topBlurb">
@@ -45,6 +70,7 @@ Mentor Edge helps you start the career of your dreams by giving you the knowledg
     </p>
 
   </div>
+
 
 <div class="pictureTable">
 
@@ -57,26 +83,30 @@ Mentor Edge helps you start the career of your dreams by giving you the knowledg
       <div class="circle">
       </div>
     <div class="blurbs" id="blurb1">
-      <h1>Learn</h1>
+    <a href="#">
+    <h1>Learn</h1>
       <p>
         Interview skills, resume writing, long term career planning based on your own individual strengths.
       </p>
+    </a>
     </div>
   </div>
 
 <div class="row">
   <div class="blurbs" id="blurb2">
+    <a href="#">
     <h1>Practice</h1>
     <p>
       Mock interviews, mock networking events, practice self assessments, skills evaluations.
     </p>
+    </a>
   </div>
   <div class="line">
   </div>
   <div class="circle">
   </div>
   <div id="pic2" class="w3-card-8">
-    <img class="images" src="img\medical_board.jpeg" alt="" />
+    <img class="images" src="img\interview.jpeg" alt="" />
   </div>
 </div>
 
@@ -89,19 +119,23 @@ Mentor Edge helps you start the career of your dreams by giving you the knowledg
   <div class="circle">
   </div>
   <div class="blurbs" id="blurb3">
+    <a href="#">
     <h1>Network</h1>
     <p>
       Meet professionals in your field and get the insight you need in order to get the job of your dreams.
     </p>
+    </a>
   </div>
 </div>
 
 <div class="row">
   <div class="blurbs" id="blurb4">
+    <a href="#">
     <h1>Results</h1>
     <p>
       Realize your visions and aspirations, get the job of your dreams.
     </p>
+    </a>
   </div>
   <div class="line">
   </div>
@@ -116,7 +150,8 @@ Mentor Edge helps you start the career of your dreams by giving you the knowledg
 
 <div class="callToAction">
     <span>Start Your Future Now!</span>
-    <button type="button" class="w3-btn-floating-large" name="callToActionButton" id="callToAction" onclick="document.getElementById('callToActionForm').style.display='block'">Contact Us</button>
+    <button type="button" class="w3-btn-floating-large" name="callToActionButton" id="callToAction" onclick="document.getElementById('callToActionForm').style.display='block'"><img src="img\owl-icon-blue.png" alt="" id='owl'/></button>
+
 </div>
 
 <div id="callToActionForm" class="w3-modal">
@@ -150,8 +185,12 @@ Mentor Edge helps you start the career of your dreams by giving you the knowledg
 
   </footer>
 
-<!--page specific JS file  -->
+
+  <!-- jQuery -->
+<script   src="http://code.jquery.com/jquery-2.2.4.min.js"></script
+  <!--page specific JS file  -->
   <script type="text/javascript" src="main.js"> </script>
+
 
 </body>
 
