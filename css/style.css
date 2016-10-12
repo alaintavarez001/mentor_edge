@@ -43,24 +43,24 @@ a:hover{
 
 #bridge h1{
   position: absolute;
-  top: 34  %;
+  top: 34%;
   text-align: center;
   align-self: center;
   font-family: abel;
   font-weight: bolder;
   margin-bottom: 0;
-  font-size: 60px;
+  font-size: 90px;
 }
 
 #bridge h3{
   position: absolute;
-  top: 65%;
-  right: 33%;
+  top: 70%;
+  right: 26%;
   text-align: center;
   align-self: center;
   font-family: abel;
   font-weight: bolder;
-  font-size: 40px;
+  font-size: 50px;
   margin-top: 0;
   margin-bottom: 10rem;
 }
