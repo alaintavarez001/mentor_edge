@@ -250,6 +250,10 @@ a:hover{
   color: #0e1e3d;
 }
 
+#callToAction:hover{
+  border: solid 5px #3872bf;
+}
+
 #callToAction:active{
   background-color: LightGrey;
 }
