@@ -1,6 +1,7 @@
 @import url('w3.css');
 @import url('navIcon.css');
 @import url('sideMenu.css');
+@import url('modals.css');
 
 /*header stytling*/
 header{
@@ -25,13 +26,13 @@ a:hover{
     text-shadow: 0 0 3px DimGrey;
 }
 
-#bridge{
+/*#bridge{
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   background: linear-gradient(#3872bf, transparent),
-              /*linear-gradient(transparent,white),*/
+              linear-gradient(transparent,white),
               url('../img/sunny_bridge.jpeg');
   background-repeat: no-repeat;
   background-position: center;
@@ -39,7 +40,7 @@ a:hover{
   width: 100%;
   height: 100%;
   padding: 25rem;
-}
+}*/
 
 #bridge h1{
   position: absolute;
@@ -65,10 +66,10 @@ a:hover{
   margin-bottom: 10rem;
 }
 
-#owl{
- height: 4.5rem;
- width: 4.5rem;
-}
+/*#owl{
+  height: 4.5rem;
+  width: 4.5rem;
+}*/
 
 .w3-navbar{
   width: 100%;
@@ -215,105 +216,6 @@ a:hover{
 #blurb2, #blurb4 p{
   text-align: right;
 }
-
-.callToAction{
-  display: flex;
-  flex-direction: column;
-  margin: 5rem auto;
-  height: 15rem;
-  background-color: black;
-}
-
-.callToAction span{
-  align-self: center;
-  margin: 2rem auto 1rem auto;
-  font-size: 30px;
-  font-family: abel;
-  font-weight: bold;
-  color: white;
-  text-shadow: 0 0 2px #0e1e3d ;
-}
-
-#callToAction{
-  margin: auto;
-  align-self: center;
-  justify-content: center;
-  margin-top: 5rem;
-  border-radius: 10px;
-  background-color: white;
-  border: 5px solid white;
-  margin: 0 auto;
-  height: 7rem;
-  width: 15rem;
-  font-family: abel;
-  font-size: 25px;
-  color: #0e1e3d;
-}
-
-#callToAction:hover{
-  border: solid 5px #3872bf;
-}
-
-#callToAction:active{
-  background-color: LightGrey;
-}
-
-
-.w3-container{
-  border: 6px solid #3872bf;
-  border-radius: 15px;
-  padding: 1rem;
-}
-
-.w3-modal-content{
-  width:25%;
-}
-
-#callToActionForm{
-  color: black;
-  font-family: abel;
-  font-size: 25px;
-}
-
-.formTitle{
-  color: #0e1e3d;
-  font-family: abel;
-  margin-top: 5rem;
-  font-size: 25px;
-  font-weight: bolder;
-}
-
-.formText{
-  color: #0e1e3d;
-  font-family: abel;
-  font-size: 25px;
-  font-weight: bold;
-}
-
-#inputForm{
-  margin: 1rem auto;
-}
-
-#inputForm input{
-  width: 100%;
-}
-
-#submitButton, #closeButton{
-  margin: 0 auto;
-  border: 4px solid #3872bf;
-  border-radius: 10px;
-  background-color: white;
-  color: #0e1e3d;
-  font-family: abel;
-  font-weight: bold;
-  font-size: 25px;
-}
-
-#submitButton:active, #closeButton:active{
-  background-color: LightGrey;
-}
-
-
 
 
 /*footer styling*/

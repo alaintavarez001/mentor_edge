@@ -12,7 +12,7 @@
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Abel" />
 
   <link rel="stylesheet" href="css/style.css">
-  <!-- <link rel='stylesheet' href='css/slider.css' /> -->
+  <link rel='stylesheet' href='css/slider.css' />
 
   <title>MentorEdge</title>
 
@@ -23,17 +23,15 @@
   <header>
       <nav class="navbar">
         <a href="#"><img src="img\owl-icon-blue.png" alt="" id='owl' /></a>
+        <h1>Mentor<i>Edge</i></h1><br>
         <div id="nav-icon">
           <span></span>
           <span></span>
           <span></span>
-        </div>
+         </div>
       </nav>
-<!-- mentor edge logo -->
-    <!-- <div id="title">
-      <img src="img\MentorEdgeLogoOwls.png" alt="" />
-    </div> -->
-    <!-- <div id='slider'>
+
+    <div id='slider'>
 
       <figure>
         <img src='img/slider/concert_lg.jpeg' alt />
@@ -41,13 +39,13 @@
         <img src='img/slider/surfer_lg.jpeg' alt />
         <img src='img/slider/concert_lg.jpeg' alt />
       </figure>
-    </div> -->
+    </div>
 
 
-  <div id="bridge">
-   <h1>Mentor<i>Edge</i></h1><br>
+  <!-- <div id="bridge">
+
    <h3>Unleashing The Power Of People</h3>
-  </div>
+  </div> -->
 
   <!-- sliding menu -->
   <div id="sideMenu" class="hideMenu">
@@ -83,7 +81,7 @@ Mentor Edge helps you start the career of your dreams by giving you the knowledg
       <div class="circle">
       </div>
     <div class="blurbs" id="blurb1">
-    <a href="#">
+    <a href="#" onclick="document.getElementById('learnModal').style.display='block'">
     <h1>Learn</h1>
       <p>
         Interview skills, resume writing, long term career planning based on your own individual strengths.
@@ -92,9 +90,21 @@ Mentor Edge helps you start the career of your dreams by giving you the knowledg
     </div>
   </div>
 
+  <!-- Learn Modal  -->
+  <div id="learnModal" class="w3-modal">
+  <div class="w3-modal-content w3-border w3-round-xlarge">
+    <div class="w3-container">
+      <span onclick="document.getElementById('learnModal').style.display='none'"
+      class="w3-closebtn">&times;</span>
+      <p>Some text in the Modal..</p>
+      <p>Some text in the Modal..</p>
+    </div>
+  </div>
+</div>
+
 <div class="row">
   <div class="blurbs" id="blurb2">
-    <a href="#">
+    <a href="#" onclick="document.getElementById('practiceModal').style.display='block'">
     <h1>Practice</h1>
     <p>
       Mock interviews, mock networking events, practice self assessments, skills evaluations.
@@ -110,6 +120,18 @@ Mentor Edge helps you start the career of your dreams by giving you the knowledg
   </div>
 </div>
 
+<!-- Practice Modal  -->
+<div id="practiceModal" class="w3-modal">
+<div class="w3-modal-content w3-border w3-round-xlarge">
+  <div class="w3-container">
+    <span onclick="document.getElementById('practiceModal').style.display='none'"
+    class="w3-closebtn">&times;</span>
+    <p>Some text in the Modal..</p>
+    <p>Some text in the Modal..</p>
+  </div>
+</div>
+</div>
+
 <div class="row">
   <div id="pic3" class="w3-card-8">
     <img class="images" src="img\coffeeshop_meeting.jpeg" alt="" />
@@ -119,7 +141,7 @@ Mentor Edge helps you start the career of your dreams by giving you the knowledg
   <div class="circle">
   </div>
   <div class="blurbs" id="blurb3">
-    <a href="#">
+    <a href="#" onclick="document.getElementById('networkModal').style.display='block'">
     <h1>Network</h1>
     <p>
       Meet professionals in your field and get the insight you need in order to get the job of your dreams.
@@ -128,9 +150,21 @@ Mentor Edge helps you start the career of your dreams by giving you the knowledg
   </div>
 </div>
 
+<!-- Network Modal  -->
+<div id="networkModal" class="w3-modal">
+<div class="w3-modal-content w3-border w3-round-xlarge">
+  <div class="w3-container">
+    <span onclick="document.getElementById('networkModal').style.display='none'"
+    class="w3-closebtn">&times;</span>
+    <p>Some text in the Modal..</p>
+    <p>Some text in the Modal..</p>
+  </div>
+</div>
+</div>
+
 <div class="row">
   <div class="blurbs" id="blurb4">
-    <a href="#">
+    <a href="#" onclick="document.getElementById('resultsModal').style.display='block'">
     <h1>Results</h1>
     <p>
       Realize your visions and aspirations, get the job of your dreams.
@@ -144,6 +178,18 @@ Mentor Edge helps you start the career of your dreams by giving you the knowledg
   <div id="pic4" class="w3-card-8">
     <img class="images" src="img\got_the_job_text.jpeg" alt="" />
   </div>
+</div>
+
+<!-- Results Modal  -->
+<div id="resultsModal" class="w3-modal">
+<div class="w3-modal-content w3-border w3-round-xlarge">
+  <div class="w3-container">
+    <span onclick="document.getElementById('resultsModal').style.display='none'"
+    class="w3-closebtn">&times;</span>
+    <p>Some text in the Modal..</p>
+    <p>Some text in the Modal..</p>
+  </div>
+</div>
 </div>
 
 </div>

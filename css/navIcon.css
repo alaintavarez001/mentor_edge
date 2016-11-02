@@ -2,6 +2,19 @@
 
 #owl{
   margin-top: .5rem;
+  height: 4.5rem;
+  width: 4.5rem;
+}
+
+h1{
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  font-family: abel;
+}
+
+h1 i{
+  color:#3872bf
 }
 
 .navbar{
@@ -31,7 +44,7 @@
   border-color: #3872bf;
   position: relative;
   right: 5rem;
-  top: 2rem;
+  top: -6rem;
 }
 
 #nav-icon {

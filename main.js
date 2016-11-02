@@ -8,3 +8,7 @@ $('#nav-icon').click(function() {
     $('#sideMenu').addClass('hideMenu');
   };
 });
+
+$("a").click(function(event) {
+  event.preventDefault();
+});
