@@ -95,6 +95,21 @@
   background-color: LightGrey;
 }
 
-#id01{
+.w3-modal{
+  font-family: abel;
+  font-weight: bold;
+}
 
+.w3-modal p{
+  font-size: 20px;
+}
+
+.w3-modal h2{
+  font-family: abel;
+  font-weight: bold;
+  text-align: center;
+}
+
+.w3-modal a{
+  font-size: 19px
 }
