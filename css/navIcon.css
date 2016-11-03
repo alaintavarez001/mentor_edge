@@ -58,6 +58,11 @@
   cursor: pointer;
 }
 
+#nav-icon div{
+  height: 100%;
+  width: 100%;
+}
+
 #nav-icon span {
   display: block;
   position: absolute;
@@ -122,4 +127,24 @@
   transform: rotate(-45deg);
   top: 39px;
   left: 8px;
+}
+
+
+@media only screen and (max-width : 480px) {
+
+  .navbar img{
+    height: 2rem;
+    width: 2rem;
+  }
+
+  #nav-icon {
+    width: 60px;
+    height: 20px;
+  }
+
+  .navbar h1{
+    visibility: hidden;
+  }
+
+
 }

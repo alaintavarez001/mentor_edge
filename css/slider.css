@@ -42,6 +42,14 @@ div#slider figure {
 
 @media only screen and (max-width : 480px) {
 
+#slider{
+  height: 15rem;
+  margin-top: -6rem;
+  margin-bottom: 3rem;
+  border-bottom: 5px solid #3872bf;
+  padding-bottom: 0;
+}
+
 
 header{
   height: 30vh;

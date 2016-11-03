@@ -47,8 +47,15 @@
   padding: 1rem;
 }
 
-.w3-modal-content{
-  width:25%;
+#userForm{
+  width:40%;
+}
+
+#userForm1{
+  padding-top: 5rem;
+  padding-left: 10rem;
+  padding-bottom: 5rem;
+  padding-right: 10rem;
 }
 
 #callToActionForm{
@@ -112,4 +119,27 @@
 
 .w3-modal a{
   font-size: 19px
+}
+
+.w3-modal-content{
+  width:80%;
+}
+
+.w3-container{
+  border: 6px solid #3872bf;
+  border-radius: 15px;
+  padding: 2rem;
+}
+
+@media only screen and (max-width : 480px) {
+
+  .w3-modal-content{
+    width:60%;
+    margin-top: 3rem;
+  }
+
+  #userForm1{
+  padding: 1rem;
+  }
+
 }
