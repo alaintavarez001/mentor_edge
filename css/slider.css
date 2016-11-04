@@ -1,4 +1,4 @@
-@keyframes slidy {
+/*@keyframes slidy {
   0% { left: 0%; }
   13% { left: 0%; }
   23% { left: -100%; }
@@ -29,16 +29,44 @@ div#slider figure {
   text-align: left;
   font-size: 0;
   animation: 12s slidy infinite;
-}
+}*/
 
 /*resize slider*/
 #slider {
-  height: 41rem;
+  margin: 0 auto;
+  width: 100%;
   margin-top: 6rem;
   margin-bottom: 5rem;
-  border-bottom: 10px solid #3872bf;
+  background: black;
 }
 
+
+
+#slider img{
+  height:100%;
+  width:100%;
+}
+
+.w3-badge{
+  background: transparent;
+  height: 1.2rem;
+  width: .1rem;
+}
+
+.w3-badge:hover{
+  cursor: pointer;
+  cursor: hand;
+}
+
+/*.w3-left, .w3-right{
+  color: white;
+  height: 1rem;
+}*/
+
+.w3-left, .w3-right:hover{
+  cursor: pointer;
+  cursor: hand;
+}
 
 @media only screen and (max-width : 480px) {
 
