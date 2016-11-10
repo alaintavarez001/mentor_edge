@@ -40,13 +40,6 @@
   background-color: LightGrey;
 }
 
-
-.w3-container{
-  border: 6px solid #3872bf;
-  border-radius: 15px;
-  padding: 1rem;
-}
-
 #userForm{
   width:40%;
 }
@@ -125,7 +118,7 @@
   width:80%;
 }
 
-.w3-container{
+.w3-modal .w3-container{
   border: 6px solid #3872bf;
   border-radius: 15px;
   padding: 2rem;

@@ -2,6 +2,7 @@
 @import url('navIcon.css');
 @import url('sideMenu.css');
 @import url('modals.css');
+@import url("https://fonts.googleapis.com/css?family=Exo+2");
 
 /*header stytling*/
 header{
@@ -33,51 +34,6 @@ i{
   color:#3872bf
 }
 
-/*#bridge{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  background: linear-gradient(#3872bf, transparent),
-              linear-gradient(transparent,white),
-              url('../img/sunny_bridge.jpeg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  padding: 25rem;
-}*/
-
-/*#bridge h1{
-  position: absolute;
-  top: 34%;
-  text-align: center;
-  align-self: center;
-  font-family: abel;
-  font-weight: bolder;
-  margin-bottom: 0;
-  font-size: 90px;
-}
-
-#bridge h3{
-  position: absolute;
-  top: 70%;
-  right: 26%;
-  text-align: center;
-  align-self: center;
-  font-family: abel;
-  font-weight: bolder;
-  font-size: 50px;
-  margin-top: 0;
-  margin-bottom: 10rem;
-}*/
-
-/*#owl{
-  height: 4.5rem;
-  width: 4.5rem;
-}*/
-
 .w3-navbar{
   width: 100%;
   position: fixed;
@@ -101,19 +57,6 @@ i{
   border-radius: 5px;
 
 }
-
-/*top blurb styling*/
-/*.topBlurb{
-  width: 80%;
-  margin: 3em auto;
-  font-family: abel;
-  font-size: 24px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  color: black;
-  text-shadow: 0 0 3px DimGrey;
-  text-align: center;
-}*/
 
 
 .pictureTable{
@@ -229,7 +172,7 @@ i{
   flex-direction: column;
   width: 100%;
   margin-top: 5rem;
-  font-family: abel;
+  font-family: 'Exo 2';
   font-size: 35px;
   font-weight: bold;
 }
@@ -237,6 +180,7 @@ i{
 #bottomPic img{
   width: 100%;
 }
+
 #unleash{
   justify-content: flex-start;
   text-align: left;
