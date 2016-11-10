@@ -14,6 +14,14 @@ $("a").click(function(event) {
 });
 
 
+$('#callToAction').mouseenter(function(event) {
+  $('#owl2').addClass('w3-spin');
+});
+
+$('#callToAction').mouseleave(function (event) {
+  $('#owl2').removeClass('w3-spin');
+});
+
 //slides
 
 var slideIndex = 1;
@@ -34,10 +42,9 @@ function showDivs(n) {
     x[slideIndex-1].style.display = "block";
 }
 
-
+var timer;
 var slideIndex = 0;
 carousel();
-
 function carousel() {
     var i;
     var x = document.getElementsByClassName("mySlides");
@@ -47,5 +54,20 @@ function carousel() {
     slideIndex++;
     if (slideIndex > x.length) {slideIndex = 1}
     x[slideIndex-1].style.display = "block";
-    setTimeout(carousel, 10000); // Change image every 10 seconds
+    timer = setTimeout(carousel, 10000); // Change image every 10 seconds
 }
+
+$('#slider').click(function(){
+  if ($('.mySlides').hasClass('w3-animate-fading')) {
+    $('.mySlides').removeClass('w3-animate-fading');
+    document.getElementById('pause').style.display='block';
+    setTimeout(function(){$('#pause').fadeOut()},300);
+    clearTimeout(timer);
+
+  }else{
+    document.getElementById('play').style.display='block'
+    setTimeout(function(){$('#play').fadeOut()},300);
+    $('.mySlides').addClass('w3-animate-fading');
+    carousel();
+  };
+});

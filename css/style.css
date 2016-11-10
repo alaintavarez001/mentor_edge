@@ -2,6 +2,7 @@
 @import url('navIcon.css');
 @import url('sideMenu.css');
 @import url('modals.css');
+@import url('font-awesome.min.css');
 @import url("https://fonts.googleapis.com/css?family=Exo+2");
 
 /*header stytling*/
@@ -193,6 +194,12 @@ i{
   text-align: right;
   margin-right: 5rem;
   margin-top: 1rem;
+}
+
+#owl2{
+  margin-top: .5rem;
+  height: 4.5rem;
+  width: 4.5rem;
 }
 
 /*footer styling*/
