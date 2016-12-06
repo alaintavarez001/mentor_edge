@@ -56,19 +56,19 @@
 }
 
 #slider1{
-  background-image: url('../img/slider/Slider1.jpeg');
+  background-image: url('../img/slider/Slider1r.jpg');
   background-position: center;
   background-size: cover;
 }
 
 #slider2{
-  background-image: url('../img/slider/Slider2.jpeg');
+  background-image: url('../img/slider/Slider2r.jpg');
   background-position: center;
   background-size: cover;
 }
 
 #slider3{
-  background-image: url('../img/slider/Slider3.jpeg');
+  background-image: url('../img/slider/Slider3r.jpg');
   background-position: center;
   background-size: cover;
 }
